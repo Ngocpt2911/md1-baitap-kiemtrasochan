@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <h3>Nhập vào số bạn muốn kiểm tra: </h3>
+    <input type="number" id="number" placeholder="VD: 123">
+    <input type="submit" value="Kiểm tra" onclick="checkNumber();">
+</form>
+<script>
+    function checkNumber() {
+        let number = document.getElementById("number").value;
+        if(number % 2 == 0) {
+            alert(number + " là một số chẵn");
+        }else {
+            alert(number +" là một số lẻ");
+        }
+    }
+</script>
+</body>
+</html>
